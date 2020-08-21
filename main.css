@@ -31,14 +31,47 @@ h1, #sub-header {
 h1 {
     padding-top: 20px;
 }
-form {
+@media (max-width: 500px) {
+  header {
+    position: static;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+}
+header a {
+    padding-right: 0px;
+    font-size: 15px;
+}
+#header-img {
+    margin-left: 0px;
+}
+.nav {
+    margin-top: 5px;
+}
+#nav-bar {
     display: flex;
-    align-items: center;  
     flex-direction: column;
 }
+main {
+    margin-top: 0px;
+}
+}
+form {
+  display: flex;
+  align-items: center;  
+  flex-direction: column;
+}
 #email {
-    min-width: 50px;
+  min-width: 50px;
 }
 #submit {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
+}
+#video {
+  display: block;
+  margin: auto;
+}
+p {
+  text-align: center;
 }
